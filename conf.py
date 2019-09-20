@@ -84,7 +84,10 @@ html_theme = 'sphinx_rtd_theme'
 # further.  For a list of options available for each theme, see the
 # documentation.
 #
-# html_theme_options = {}
+html_theme_options = {
+    'collapse_navigation' : True,
+    'logo_only': True,
+}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -101,7 +104,8 @@ html_static_path = ['_static']
 #
 # html_sidebars = {}
 
-
+html_favicon = 'favicon.ico'
+# html_logo = 'LOGO_sincgrid.svg'
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
