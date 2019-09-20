@@ -20,7 +20,7 @@
 # -- Project information -----------------------------------------------------
 
 project = u'ESP32-IOTA-SYNC'
-copyright = u'2019, Mrityunjai Kumar'
+copyright = u'2019, SincGrid LLP'
 author = u'MrityunjaiKumar'
 
 # The short X.Y version
