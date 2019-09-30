@@ -1,11 +1,14 @@
-.. IOTA-SYNC documentation master file, created by
-   sphinx-quickstart on Fri Sep 20 04:41:21 2019.
+.. ESP32-IOTA-SYNC documentation master file, created by
+   sphinx-quickstart on Sat Sep 21 01:15:11 2019.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to IOTA-SYNC's documentation!
-=====================================
-This is the documentation for IOTA-SYNC board based on ESP32.
+Get Started
+===========================================
+
+This is the documentation for the IOT-A-SYNC board.
+IOT-A-SYNC board is developed around ESP32 SOC by Espressif Systems.
+ESP32 is a series of low-cost, low-power system on a chip microcontrollers with integrated Wi-Fi and dual-mode Bluetooth
 
 .. toctree::
    :maxdepth: 2
