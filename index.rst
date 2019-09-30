@@ -7,6 +7,8 @@ Get Started
 ===========================================
 
 This is the documentation for the IOT-A-SYNC board.
+IOT-A-SYNC board is developed around ESP32 SOC by Espressif Systems.
+ESP32 is a series of low-cost, low-power system on a chip microcontrollers with integrated Wi-Fi and dual-mode Bluetooth
 
 .. toctree::
    :maxdepth: 2
