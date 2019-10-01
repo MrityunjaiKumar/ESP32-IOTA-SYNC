@@ -1,0 +1,20 @@
+Documentaion
+===========================================
+
+This is the documentation for the IOT-A-SYNC board.
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+   Basics of Git and GitHub
+   Sphinx
+
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
