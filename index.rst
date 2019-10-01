@@ -14,7 +14,7 @@ ESP32 is a series of low-cost, low-power system on a chip microcontrollers with 
    :maxdepth: 2
    :caption: Contents:
 
-
+   SettingPlatformIO.rst
 
 Indices and tables
 ==================
@@ -22,3 +22,4 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
