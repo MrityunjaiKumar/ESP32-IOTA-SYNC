@@ -1,0 +1,362 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Basics Of Git and GitHub &mdash; ESP32-IOTA-SYNC 1.0.0 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Get Started" href="Sphinx.html" />
+    <link rel="prev" title="Documentaion" href="Documentation.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ESP32-IOTA-SYNC
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="Documentation.html">Documentaion</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Basics Of Git and GitHub</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#git-installation">Git Installation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#for-windows">For Windows</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#for-linux">For Linux</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#configuration">Configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#basic-git-commands">Basic Git Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#git-and-github">Git and GitHub</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#basic-commands">Basic Commands</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#branching-of-github-repositories">Branching of GitHub Repositories</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cloning-a-github-repository">Cloning a GitHub Repository</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#forks-and-pull-requests">Forks and Pull Requests</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Sphinx.html">Get Started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Sphinx.html#indices-and-tables">Indices and tables</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Documentation.html#indices-and-tables">Indices and tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SettingPlatformIO.html">Setting up Environment(Platform.IO)</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ESP32-IOTA-SYNC</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="Documentation.html">Documentaion</a> &raquo;</li>
+        
+      <li>Basics Of Git and GitHub</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Basics of Git and GitHub.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="basics-of-git-and-github">
+<h1>Basics Of Git and GitHub<a class="headerlink" href="#basics-of-git-and-github" title="Permalink to this headline">¶</a></h1>
+<p>Git is a distributed version control tool that a developer installs locally on their computer, that can manage a development project’s source code history, while GitHub is a cloud based platform built around the Git tool. GitHub is an online service that stores code pushed to it from computers running the Git tool. Here, we will learn and master all the basics of Git and GitHub.</p>
+<div class="section" id="git-installation">
+<h2>Git Installation<a class="headerlink" href="#git-installation" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="for-windows">
+<h3>For Windows<a class="headerlink" href="#for-windows" title="Permalink to this headline">¶</a></h3>
+<p>To download and install Git for Windows, go to this <a class="reference external" href="https://git-scm.com/download/win/">link</a>. This will download the installer. Run the installer, and go along with the default installation settings. Once installation completes, the Git commands can be run from the Command Prompt or Windows Powershell.</p>
+</div>
+<div class="section" id="for-linux">
+<h3>For Linux<a class="headerlink" href="#for-linux" title="Permalink to this headline">¶</a></h3>
+<p>On the Linux terminal, run the following command-</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">git</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="configuration">
+<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<p>Git for Windows provides an application called Git Bash, which provides an emulation layer for Git command line experience. In order to use it, simply launch the Git Bash application. To use Git commands for a specific directory, navigate to the destination by using the change directory command. Alternatively, open the destination folder, right click and select the ‘Git Bash Here’ option from the menu.</p>
+<p>After installation, it is ideal to run the following commands from Git Bash to provide configuration information-</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git config --global user.name &quot;user-name&quot;
+$ git config --global user.email &quot;user-email&quot;
+</pre></div>
+</div>
+</div>
+<div class="section" id="basic-git-commands">
+<h2>Basic Git Commands<a class="headerlink" href="#basic-git-commands" title="Permalink to this headline">¶</a></h2>
+<p>Before we move on to Git commands, it is crucial to understand how the process of using Git actually works.
+Essentially, when you save the current state of your project in Git, it takes a snapshot of what your project looks like at that very instant. Since we can save many versions of the same project in Git, if we encounter an error during the course of development, it is possible to revert back to the last version of the project that worked, using Git. This eliminates the time and energy that we would otherwise have spent in starting all over. <span class="raw-html"><br /></span>
+Git has 3 states your files can reside in:</p>
+<blockquote>
+<div><ul class="simple">
+<li><em>Committed</em> means that the data is safely stored in the local database.</li>
+<li><em>Modified</em> means that the files have been changed but not committed yet.</li>
+<li><em>Staged</em> means that the files have been marked in their current version, and can be committed. <span class="raw-html"><br /></span></li>
+</ul>
+</div></blockquote>
+<p>The project resides in our local directory or repository. When we make changes to files in such a directory, the files are said to have been ‘modified’. When we stage a file, we add a snapshot of it to the staging area. Once we commit such a file, it’s snapshot from the staging area is saved permanently in the Git directory.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/GitWorkflow.jpg"><img alt="_images/GitWorkflow.jpg" src="_images/GitWorkflow.jpg" style="width: 500px; height: 400px;" /></a>
+</div>
+<p>Use the git init command to create a new Git repository from a working directory on the system. On the Git Bash, navigate to the working directory, and run the following-</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git init
+</pre></div>
+</div>
+<p>After this, add the files to the staging area.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git add .
+</pre></div>
+</div>
+<p>to add all the files in the working repository <span class="raw-html"><br /></span>
+OR</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git add filename
+</pre></div>
+</div>
+<p>to add a specific file. <span class="raw-html"><br /></span>
+Now, these files are present in the staging area. In order to commit them to the Git directory, run the following command-</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git commit -m &quot;MESSAGE&quot;
+</pre></div>
+</div>
+<p>The message string should preferably be something that neatly sums up the changes that have been made, making the version more recognizable.</p>
+</div>
+<div class="section" id="git-and-github">
+<h2>Git and GitHub<a class="headerlink" href="#git-and-github" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="basic-commands">
+<h3>Basic Commands<a class="headerlink" href="#basic-commands" title="Permalink to this headline">¶</a></h3>
+<p>As discussed earlier, GitHub is an online cloud service built around Git Tools. It makes it extremely convenient for developers to collaborate and share repositories, codes, etc. It has powerful features like pull, merge and fork, which facilitate collaboration. <span class="raw-html"><br /></span>
+To use Github, first set up a GitHub account. Next, create a new repository.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/newrepo.jpg"><img alt="_images/newrepo.jpg" src="_images/newrepo.jpg" style="width: 500px; height: 400px;" /></a>
+</div>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/newrepo2.jpg"><img alt="_images/newrepo2.jpg" src="_images/newrepo2.jpg" style="width: 500px; height: 400px;" /></a>
+</div>
+<p>Add in the details, like the name, description etc., and create the repository. <span class="raw-html"><br /></span>
+Once this is done, we need to establish a remote connection between the GitHub repository that we have just created, and the Git Repository on our system. To do this, run the following command-</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git remote add remote-name github-repository-url
+</pre></div>
+</div>
+<p>Replace the <em>remote-name</em> with a name of your choice, and the <em>github-repository-url</em> with the url of the repository you want to add a remote connection to. <span class="raw-html"><br /></span>
+Next, we push the files in our git directory to this GitHub repository.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git push remote-name branch-name
+</pre></div>
+</div>
+<p>A branch name can be specified if the files have to be pushed to a branch other than the master branch.</p>
+</div>
+<div class="section" id="branching-of-github-repositories">
+<h3>Branching of GitHub Repositories<a class="headerlink" href="#branching-of-github-repositories" title="Permalink to this headline">¶</a></h3>
+<p>Branches are used to isolate work without affecting other branches. It can be used to develop new features, fix bugs, and experiment with new ideas. <span class="raw-html"><br /></span>
+In order to create a branch, simply navigate to the main page of the repository and click the branch selector menu. There, enter the name of the branch you wish to create.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/branch.jpg"><img alt="_images/branch.jpg" src="_images/branch.jpg" style="width: 500px; height: 200px;" /></a>
+</div>
+<p>When we have a project with multiple branches, sometimes we need to work in the branches other than master. To do this, run the following command from Git Bash-</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git checkout branch-name
+</pre></div>
+</div>
+</div>
+<div class="section" id="cloning-a-github-repository">
+<h3>Cloning a GitHub Repository<a class="headerlink" href="#cloning-a-github-repository" title="Permalink to this headline">¶</a></h3>
+<p>To clone a GitHub Repository in your system, run the following command and replace the <em>repository-url</em> with the url of the repository you wish to clone-</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git clone repository-url
+</pre></div>
+</div>
+</div>
+<div class="section" id="forks-and-pull-requests">
+<h3>Forks and Pull Requests<a class="headerlink" href="#forks-and-pull-requests" title="Permalink to this headline">¶</a></h3>
+<p>To fork someone else’s GitHub Repository to your account, first go to the repository you wish to fork, and click the ‘Fork’ option.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/fork.jpg"><img alt="_images/fork.jpg" src="_images/fork.jpg" style="width: 500px; height: 250px;" /></a>
+</div>
+<p>Forking will create your own version of the desired repository. Any changes that you make and commit will reflect in your forked version of the repository, and not the original. <span class="raw-html"><br /></span>
+However, there is a mechanism in place, which allows you to request the original owner of the repository to include the changes you have made and incorporate them in their repositories, if they so see fit. This is called sending a pull request.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/pull1.jpg"><img alt="_images/pull1.jpg" src="_images/pull1.jpg" style="width: 500px; height: 300px;" /></a>
+</div>
+<p>Choose the compare across forks option. On the left, select the repository and it’s branch that you wish to merge with, and on the right, select the repository and the branch you want to merge to the original repository. Pull requests can also be made across branches of the same repository.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/pull2.jpg"><img alt="_images/pull2.jpg" src="_images/pull2.jpg" style="width: 500px; height: 200px;" /></a>
+</div>
+<p>Once you select the repositories, GitHub will verify if they can be merged. If so, it will open up a menu for you to fill details about the pull request in. You can specify a title, detailed description etc. Once these details are filled, click on ‘Create a Pull Request’. A request will be sent to the owner of the first repository to review the changes. If approved, your repository will be merged with the original.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/GithubPullMerge.jpg"><img alt="_images/GithubPullMerge.jpg" src="_images/GithubPullMerge.jpg" style="width: 500px; height: 300px;" /></a>
+</div>
+<dl class="docutils">
+<dt>For further reference, visit:</dt>
+<dd><p class="first"><a class="reference external" href="https://git-scm.com/book/en/v1/Getting-Started-Git-Basics">https://git-scm.com/book/en/v1/Getting-Started-Git-Basics</a></p>
+<p class="last"><a class="reference external" href="https://codeburst.io/git-and-github-in-a-nutshell-b0a3cc06458f">https://codeburst.io/git-and-github-in-a-nutshell-b0a3cc06458f</a></p>
+</dd>
+</dl>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Sphinx.html" class="btn btn-neutral float-right" title="Get Started" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Documentation.html" class="btn btn-neutral float-left" title="Documentaion" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, SincGrid LLP
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
