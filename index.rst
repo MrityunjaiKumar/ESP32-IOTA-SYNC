@@ -15,13 +15,7 @@ ESP32 is a series of low-cost, low-power system on a chip microcontrollers with 
    :caption: Contents:
    
    Documentation
+   SettingPlatformIO
+   SettingArduinoIDE
 
-   SettingPlatformIO.rst
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
 
