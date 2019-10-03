@@ -1,4 +1,4 @@
-Documentaion
+Documentation
 ===========================================
 
 This is the documentation for the IOT-A-SYNC board.
