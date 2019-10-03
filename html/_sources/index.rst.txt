@@ -11,7 +11,8 @@ Get Started
 This is the documentation for the IOT-A-SYNC board.
 IOT-A-SYNC board is developed around ESP32 SOC by Espressif Systems.
 ESP32 is a series of low-cost, low-power system on a chip microcontrollers with integrated Wi-Fi and dual-mode Bluetooth. :raw-html:`<br />`
-URL for Design and Practicum Workshop: https://github.com/MrityunjaiKumar/Design_and_Practicum_workshop-DPW100-
+
+URL for Design and Practicum Workshop: `DPW <https://github.com/MrityunjaiKumar/Design_and_Practicum_workshop-DPW100->`_ 
 
 .. toctree::
    :maxdepth: 2
@@ -20,5 +21,6 @@ URL for Design and Practicum Workshop: https://github.com/MrityunjaiKumar/Design
    Documentation
    SettingPlatformIO
    SettingArduinoIDE
+   CH340 Driver for Windows
 
 
