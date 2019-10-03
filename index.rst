@@ -22,5 +22,6 @@ URL for Design and Practicum Workshop: `DPW <https://github.com/MrityunjaiKumar/
    SettingPlatformIO
    SettingArduinoIDE
    CH340 Driver for Windows
+   BME280
 
 

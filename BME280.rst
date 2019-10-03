@@ -1,0 +1,83 @@
+***************************
+BME280
+*************************** 
+Temperature, Humidity and Pressure Sensor
+#########################################
+BME280 is the next-generation digital temperature, humidity and pressure sensor manufactured by Bosch. It’s a successor to sensors like BMP180, BMP085 or BMP183.
+
+.. image:: BME280-Pic.png
+       :width: 600px
+       :align: center
+       :height: 250px
+       :alt: alternate text
+
+#. Operating Voltage = 3.3V to 5V
+
+#. Communication Protocol = I2C(Default Address = 0x76)
+   
+#. Library Used = Adafruit BME280
+
+#. Installing Library on PlatformIO:
+   Go on PlatformIO home → Click on libraries → Search for Adafruit BME280 → Click on Install to → Change Global Storage to your project directory → Click Install
+
+   The BME280 sensor library uses the Adafruit Sensor support backend. So, search the library manager for Adafruit Unified Sensor, Wire and install them too.
+   
+   *Example Code*
+.. code-block:: arduino
+
+   #include <Arduino.h>
+   #include <Adafruit_Sensor.h>
+   #include <Adafruit_BME280.h>
+
+   Adafruit_BME280 bme;
+
+   float temperature, humidity, pressure, altitude;
+
+   #define SEALEVELPRESSURE_HPA (1050)
+
+   void setup() {
+     // put your setup code here, to run once:
+     Serial.begin(9600);
+     delay(100);
+     bme.begin(0x76); 
+   }
+
+   void loop() {
+     // put your main code here, to run repeatedly:
+     temperature = bme.readTemperature();
+     humidity = bme.readHumidity();
+     pressure = bme.readPressure() / 100.0F;
+     altitude = bme.readAltitude(SEALEVELPRESSURE_HPA);
+
+     Serial.print("Temperature = ");
+     Serial.print(bme.readTemperature());
+     Serial.println(" *C");
+  
+     // Convert temperature to Fahrenheit
+     /*Serial.print("Temperature = ");
+     Serial.print(1.8 * bme.readTemperature() + 32);
+     Serial.println(" *F");*/
+  
+     Serial.print("Pressure = ");
+     Serial.print(bme.readPressure() / 100.0F);
+     Serial.println(" hPa");
+
+     Serial.print("Approx. Altitude = ");
+     Serial.print(bme.readAltitude(SEALEVELPRESSURE_HPA));
+     Serial.println(" m");
+
+     Serial.print("Humidity = ");
+     Serial.print(bme.readHumidity());
+     Serial.println(" %");
+
+     Serial.println();
+    delay(1000);
+   }
+
+**Expected Output(On serial monitor)**
+
+.. image:: BME280_output.png
+       :width: 400px
+       :align: center
+       :height: 100px
+       :alt: alternate text

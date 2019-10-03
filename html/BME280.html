@@ -1,0 +1,276 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>BME280 &mdash; ESP32-IOTA-SYNC 1.0.0 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="CH340 Driver for Windows" href="CH340 Driver for Windows.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ESP32-IOTA-SYNC
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Documentation.html">Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SettingPlatformIO.html">Setting up Environment(Platform.IO)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SettingArduinoIDE.html">Setting up Arduino IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CH340 Driver for Windows.html">CH340 Driver for Windows</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">BME280</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#temperature-humidity-and-pressure-sensor">Temperature, Humidity and Pressure Sensor</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ESP32-IOTA-SYNC</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>BME280</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/BME280.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="bme280">
+<h1>BME280<a class="headerlink" href="#bme280" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="temperature-humidity-and-pressure-sensor">
+<h2>Temperature, Humidity and Pressure Sensor<a class="headerlink" href="#temperature-humidity-and-pressure-sensor" title="Permalink to this headline">¶</a></h2>
+<p>BME280 is the next-generation digital temperature, humidity and pressure sensor manufactured by Bosch. It’s a successor to sensors like BMP180, BMP085 or BMP183.</p>
+<a class="reference internal image-reference" href="_images/BME280-Pic.png"><img alt="alternate text" class="align-center" src="_images/BME280-Pic.png" style="width: 600px; height: 250px;" /></a>
+<ol class="arabic">
+<li><p>Operating Voltage = 3.3V to 5V</p></li>
+<li><p>Communication Protocol = I2C(Default Address = 0x76)</p></li>
+<li><p>Library Used = Adafruit BME280</p></li>
+<li><p>Installing Library on PlatformIO:
+Go on PlatformIO home → Click on libraries → Search for Adafruit BME280 → Click on Install to → Change Global Storage to your project directory → Click Install</p>
+<p>The BME280 sensor library uses the Adafruit Sensor support backend. So, search the library manager for Adafruit Unified Sensor, Wire and install them too.</p>
+<p><em>Example Code</em></p>
+</li>
+</ol>
+<div class="highlight-arduino notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;Arduino.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;Adafruit_Sensor.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;Adafruit_BME280.h&gt;</span><span class="cp"></span>
+
+<span class="n">Adafruit_BME280</span> <span class="n">bme</span><span class="p">;</span>
+
+<span class="kr">float</span> <span class="n">temperature</span><span class="p">,</span> <span class="n">humidity</span><span class="p">,</span> <span class="n">pressure</span><span class="p">,</span> <span class="n">altitude</span><span class="p">;</span>
+
+<span class="cp">#define SEALEVELPRESSURE_HPA (1050)</span>
+
+<span class="kr">void</span> <span class="nb">setup</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// put your setup code here, to run once:</span>
+  <span class="nf">Serial</span><span class="p">.</span><span class="nf">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
+  <span class="nf">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+  <span class="n">bme</span><span class="p">.</span><span class="nf">begin</span><span class="p">(</span><span class="mh">0x76</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kr">void</span> <span class="nb">loop</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// put your main code here, to run repeatedly:</span>
+  <span class="n">temperature</span> <span class="o">=</span> <span class="n">bme</span><span class="p">.</span><span class="nf">readTemperature</span><span class="p">();</span>
+  <span class="n">humidity</span> <span class="o">=</span> <span class="n">bme</span><span class="p">.</span><span class="n">readHumidity</span><span class="p">();</span>
+  <span class="n">pressure</span> <span class="o">=</span> <span class="n">bme</span><span class="p">.</span><span class="n">readPressure</span><span class="p">()</span> <span class="o">/</span> <span class="mf">100.0F</span><span class="p">;</span>
+  <span class="n">altitude</span> <span class="o">=</span> <span class="n">bme</span><span class="p">.</span><span class="n">readAltitude</span><span class="p">(</span><span class="n">SEALEVELPRESSURE_HPA</span><span class="p">);</span>
+
+  <span class="nf">Serial</span><span class="p">.</span><span class="nf">print</span><span class="p">(</span><span class="s">&quot;Temperature = &quot;</span><span class="p">);</span>
+  <span class="nf">Serial</span><span class="p">.</span><span class="nf">print</span><span class="p">(</span><span class="n">bme</span><span class="p">.</span><span class="nf">readTemperature</span><span class="p">());</span>
+  <span class="nf">Serial</span><span class="p">.</span><span class="nf">println</span><span class="p">(</span><span class="s">&quot; *C&quot;</span><span class="p">);</span>
+
+  <span class="c1">// Convert temperature to Fahrenheit</span>
+  <span class="cm">/*Serial.print(&quot;Temperature = &quot;);</span>
+<span class="cm">  Serial.print(1.8 * bme.readTemperature() + 32);</span>
+<span class="cm">  Serial.println(&quot; *F&quot;);*/</span>
+
+  <span class="nf">Serial</span><span class="p">.</span><span class="nf">print</span><span class="p">(</span><span class="s">&quot;Pressure = &quot;</span><span class="p">);</span>
+  <span class="nf">Serial</span><span class="p">.</span><span class="nf">print</span><span class="p">(</span><span class="n">bme</span><span class="p">.</span><span class="n">readPressure</span><span class="p">()</span> <span class="o">/</span> <span class="mf">100.0F</span><span class="p">);</span>
+  <span class="nf">Serial</span><span class="p">.</span><span class="nf">println</span><span class="p">(</span><span class="s">&quot; hPa&quot;</span><span class="p">);</span>
+
+  <span class="nf">Serial</span><span class="p">.</span><span class="nf">print</span><span class="p">(</span><span class="s">&quot;Approx. Altitude = &quot;</span><span class="p">);</span>
+  <span class="nf">Serial</span><span class="p">.</span><span class="nf">print</span><span class="p">(</span><span class="n">bme</span><span class="p">.</span><span class="n">readAltitude</span><span class="p">(</span><span class="n">SEALEVELPRESSURE_HPA</span><span class="p">));</span>
+  <span class="nf">Serial</span><span class="p">.</span><span class="nf">println</span><span class="p">(</span><span class="s">&quot; m&quot;</span><span class="p">);</span>
+
+  <span class="nf">Serial</span><span class="p">.</span><span class="nf">print</span><span class="p">(</span><span class="s">&quot;Humidity = &quot;</span><span class="p">);</span>
+  <span class="nf">Serial</span><span class="p">.</span><span class="nf">print</span><span class="p">(</span><span class="n">bme</span><span class="p">.</span><span class="n">readHumidity</span><span class="p">());</span>
+  <span class="nf">Serial</span><span class="p">.</span><span class="nf">println</span><span class="p">(</span><span class="s">&quot; %&quot;</span><span class="p">);</span>
+
+  <span class="nf">Serial</span><span class="p">.</span><span class="nf">println</span><span class="p">();</span>
+ <span class="nf">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><strong>Expected Output(On serial monitor)</strong></p>
+<a class="reference internal image-reference" href="_images/BME280_output.png"><img alt="alternate text" class="align-center" src="_images/BME280_output.png" style="width: 400px; height: 100px;" /></a>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="CH340 Driver for Windows.html" class="btn btn-neutral float-left" title="CH340 Driver for Windows" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Shubhra Sachdev
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
