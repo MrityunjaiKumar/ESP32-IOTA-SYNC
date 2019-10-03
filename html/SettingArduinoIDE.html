@@ -1,6 +1,5 @@
 
 
-
 <!DOCTYPE html>
 <!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
@@ -9,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Index &mdash; ESP32-IOTA-SYNC 1.0.0 documentation</title>
+  <title>Setting up Arduino IDE &mdash; ESP32-IOTA-SYNC 1.0.0 documentation</title>
   
 
   
@@ -36,8 +35,9 @@
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="index" title="Index" href="#" />
-    <link rel="search" title="Search" href="search.html" /> 
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Setting up Environment(Platform.IO)" href="SettingPlatformIO.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -82,10 +82,14 @@
             
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Documentation.html">Documentaion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="SettingPlatformIO.html">Setting up Environment(Platform.IO)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="SettingArduinoIDE.html">Setting up Arduino IDE</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Setting up Arduino IDE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#downloading-and-installing-arduino-ide">Downloading and Installing Arduino IDE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installing-esp32-add-ons-for-arduino-ide">Installing ESP32 add-ons for Arduino IDE</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -131,12 +135,14 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Index</li>
+      <li>Setting up Arduino IDE</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
+            <a href="_sources/SettingArduinoIDE.rst.txt" rel="nofollow"> View page source</a>
+          
         
       </li>
     
@@ -148,11 +154,21 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-
-<h1 id="index">Index</h1>
-
-<div class="genindex-jumpbox">
- 
+  <div class="section" id="setting-up-arduino-ide">
+<h1>Setting up Arduino IDE<a class="headerlink" href="#setting-up-arduino-ide" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="downloading-and-installing-arduino-ide">
+<h2>Downloading and Installing Arduino IDE<a class="headerlink" href="#downloading-and-installing-arduino-ide" title="Permalink to this headline">¶</a></h2>
+<p>In order to download the Arduino IDE, visit this <a class="reference external" href="https://www.arduino.cc/en/Main/Software">link</a>, download and run the installation.</p>
+</div>
+<div class="section" id="installing-esp32-add-ons-for-arduino-ide">
+<h2>Installing ESP32 add-ons for Arduino IDE<a class="headerlink" href="#installing-esp32-add-ons-for-arduino-ide" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>In the Arduino IDE, go to File –&gt; Preferences</p></li>
+<li><p>Enter <a class="reference external" href="https://dl.espressif.com/dl/package_esp32_index.json">https://dl.espressif.com/dl/package_esp32_index.json</a> into the “Additional Board Manager URLs” field.</p></li>
+<li><p>Go to Tools –&gt; Board –&gt; Boards Manager. In the dialog box, that opens up, search for ESP32, and press install button for the “ESP32 by Espressif Systems“.</p></li>
+<li><p>Now, go to Tools –&gt; Board. Now, select the <em>ESP32 DEV Module</em>.</p></li>
+</ul>
+</div>
 </div>
 
 
@@ -160,6 +176,13 @@
            
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="SettingPlatformIO.html" class="btn btn-neutral float-left" title="Setting up Environment(Platform.IO)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
