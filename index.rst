@@ -15,7 +15,7 @@ ESP32 is a series of low-cost, low-power system on a chip microcontrollers with 
 URL for Design and Practicum Workshop: `DPW <https://github.com/MrityunjaiKumar/Design_and_Practicum_workshop-DPW100->`_ 
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Contents:
    
    Documentation
@@ -23,5 +23,6 @@ URL for Design and Practicum Workshop: `DPW <https://github.com/MrityunjaiKumar/
    SettingArduinoIDE
    CH340 Driver for Windows
    BME280
+   Pinout
 
 
