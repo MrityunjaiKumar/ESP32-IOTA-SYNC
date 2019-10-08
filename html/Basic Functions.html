@@ -1,0 +1,333 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Basic Functions that can be used with ESP32 &mdash; ESP32-IOTA-SYNC 1.0.0 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="BME280" href="BME280.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ESP32-IOTA-SYNC
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Documentation.html">Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SettingPlatformIO.html">Setting up Environment(Platform.IO)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SettingArduinoIDE.html">Setting up Arduino IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CH340 Driver for Windows.html">CH340 Driver for Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Pinout.html"><strong>Pinout</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="BME280.html">BME280</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Basic Functions that can be used with ESP32</a><ul class="simple">
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ESP32-IOTA-SYNC</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Basic Functions that can be used with ESP32</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Basic Functions.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="basic-functions-that-can-be-used-with-esp32">
+<h1>Basic Functions that can be used with ESP32<a class="headerlink" href="#basic-functions-that-can-be-used-with-esp32" title="Permalink to this headline">¶</a></h1>
+<p>ESP32 uses many functions that are very similar to many arduino boards, the only difference is that some parameters have to be changed according to the hardware limitation of this board.</p>
+<p>You can visit <a class="reference external" href="https://randomnerdtutorials.com/esp32-pinout-reference-gpios/">this site</a> to know more about pinout details and limitations of ESP32.</p>
+<p><strong>Pinout Diagram</strong></p>
+<img alt="Esp32pinout" src="_images/wroompinout.png" />
+<p>The pins of ESP32 is connected to various connectors of IOT-A-SYNC, <a class="reference external" href="https://github.com/MrityunjaiKumar/Design_and_Practicum_workshop-DPW100-/blob/master/Hardware/Design/IOTA-SYNC-Schematic.png">verify it before starting</a>
+Some of the basic functions that can be used are given below:</p>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://www.arduino.cc/reference/en/language/functions/digital-io/pinmode/">pinMode</a></p></li>
+</ol>
+<blockquote>
+<div><p>This function lets the controller know weather the GPIO pin will act as Input or Output.</p>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p><a class="reference external" href="https://www.arduino.cc/reference/en/language/functions/digital-io/digitalwrite/">digitalWrite</a></p></li>
+</ol>
+<blockquote>
+<div><p>This command instructs a particular GPIO pin to go logic HIGH or logic LOW as per the arguments.</p>
+<blockquote>
+<div><div class="highlight-Arduino notranslate"><div class="highlight"><pre><span></span><span class="nf">digitalWrite</span><span class="p">(</span><span class="n">GPIO_pin_number</span><span class="p">,</span><span class="kr">HIGH</span><span class="p">);</span> <span class="c1">//This gives logic HIGH (3.3V)</span>
+<span class="nf">digitalWrite</span><span class="p">(</span><span class="n">GPIO_pin_number</span><span class="p">,</span><span class="kr">LOW</span><span class="p">);</span> <span class="c1">//This gives logic LOW (0V)</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p><a class="reference external" href="https://www.arduino.cc/reference/en/language/functions/digital-io/digitalread/">digitalRead</a></p></li>
+</ol>
+<blockquote>
+<div><p>This command checks the digital logic voltage at a particular pin specified as arguments. It returns a boolean <strong>TRUE</strong> if logic detected is HIGH at that pin
+and <strong>FALSE</strong> if logic LOW is detected.</p>
+<blockquote>
+<div><div class="highlight-Arduino notranslate"><div class="highlight"><pre><span></span><span class="nf">digitalRead</span><span class="p">(</span><span class="n">GPIO_pin_number</span><span class="p">);</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li><p><a class="reference external" href="https://www.arduino.cc/reference/en/language/functions/analog-io/analogread/">analogRead</a></p></li>
+</ol>
+<blockquote>
+<div><p>This reads the analog value at the pin specified as argument. Since it has 12bit ADC (analog-to-digital convertor) it can only
+read voltages in discrete intervals of 2^8 (i.e 2^(no. of bits)), therefore it can read upto an accuracy of 3.3/(2^8) = 0.805mV.</p>
+<blockquote>
+<div><div class="highlight-Arduino notranslate"><div class="highlight"><pre><span></span><span class="nf">analogRead</span><span class="p">(</span><span class="n">GPIO_pin_number</span><span class="p">);</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div></blockquote>
+<ol class="arabic simple" start="5">
+<li><p><strong>Writing Ananlog values</strong></p></li>
+</ol>
+<blockquote>
+<div><p>ESP32 does not have <a class="reference external" href="https://www.arduino.cc/reference/en/language/functions/analog-io/analogwrite/">analogWrite()</a> function. So we use different methods
+to generate analog signals. One such method is using PWM and other is using the inbuilt DAC hardware.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Using DAC</p></li>
+</ul>
+<div class="highlight-Arduino notranslate"><div class="highlight"><pre><span></span><span class="n">DacWrite</span><span class="p">(</span><span class="n">GPIO_pin</span><span class="p">,</span><span class="n">value</span><span class="p">);</span>
+<span class="c1">//&#39;value&#39; defined ranges from 0 to 4095 as it uses a 12 bit DAC.</span>
+</pre></div>
+</div>
+<ul>
+<li><p>Using PWM</p>
+<p>Here we use the concept that in a pulsed wave the average output is (max Voltage)X(duty cycle). Thus this method can be used to vary the brightness of an LED, vary the sound in a speaker, vary the speed of motors and many more.</p>
+<p>For this, we define a particular frequency with which we want to send PWM <em>(For lighting LEDs it should be much higher than the persistence of vision, for motors it should be according to the time constant)</em>. The duty cycle can be varied by keeping the output HIGH for some time and LOW for the rest of the time.
+See <a class="reference external" href="https://github.com/MrityunjaiKumar/Design_and_Practicum_workshop-DPW100-/blob/master/Software/Examples/On_Board_Peripheral_Examples/PWM/PWM.ino">this example</a> to get an overview on how to code for PWM.</p>
+</li>
+</ul>
+</div></blockquote>
+</div></blockquote>
+<ol class="arabic" start="6">
+<li><p><a class="reference external" href="https://www.arduino.cc/reference/en/language/functions/time/delay/">delay()</a></p>
+<p>This function lets the controller to wait for certain <strong>millisecons</strong> (as specified in the argumenmt) before executing the next instruction. When the delay is executed, the controller cannot do any other task, it’s like being in a ‘paused’ state.</p>
+<div class="highlight-Arduino notranslate"><div class="highlight"><pre><span></span><span class="nf">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span> <span class="c1">//delay of 1000ms i.e.1sec</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Similar function is <a class="reference external" href="https://www.arduino.cc/reference/en/language/functions/time/delaymicroseconds/">delayMicroseconds().</a></p></li>
+<li><p><a class="reference external" href="https://www.arduino.cc/reference/en/language/functions/time/millis/">Millis()</a> - This function returns the time in milliseconds that have been passed since program execution has started. It has overflow time of about 50 days!</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="7">
+<li><p><strong>Interrupts</strong></p></li>
+</ol>
+<blockquote>
+<div><p>Interrupt is a signal emitted by hardware or software when a process or an event needs immediate attention. It alerts the processor to a high priority process requiring interruption of the current working process. In I/O devices one of the bus control lines is dedicated for this purpose and is called the Interrupt Service Routine (ISR).</p>
+<p>When a device raises an interrupt at lets say process i, the processor first completes the execution of instruction i. Then it loads the Program Counter (PC) with the address of the first instruction of the ISR. Before loading the Program Counter with the address, the address of the interrupted instruction is moved to a temporary location. Therefore, after handling the interrupt the processor can continue with process i+1.</p>
+<p>Interrupts here can be callled in four ways/Modes:-</p>
+<ul class="simple">
+<li><p>LOW to trigger the interrupt whenever the pin is low,</p></li>
+<li><p>CHANGE to trigger the interrupt whenever the pin changes value</p></li>
+<li><p>RISING to trigger when the pin goes from low to high,</p></li>
+<li><p>FALLING for when the pin goes from high to low.</p></li>
+</ul>
+<p><strong>All GPIO pins can be configered as Interrupt pins</strong></p>
+</div></blockquote>
+<ul class="simple">
+<li><p><a class="reference external" href="https://lastminuteengineers.com/handling-esp32-gpio-interrupts-tutorial/">attachInterrupt()</a> - This tells the controller on which pin the interrupt has to be attached and what ISR does it corresponds.</p></li>
+</ul>
+<blockquote>
+<div><div class="highlight-Arduino notranslate"><div class="highlight"><pre><span></span>  <span class="nf">attachInterrupt</span><span class="p">(</span><span class="n">GPIO_Pin_no</span><span class="p">,</span> <span class="n">ISR</span><span class="p">,</span> <span class="n">Mode</span><span class="p">);</span>
+
+<span class="c1">//&#39;ISR&#39; is a function which is called when interrupt is received. ISR has to be as small as possible.</span>
+<span class="c1">//&#39;Mode&#39; specifies the event when interrupt should be called.</span>
+</pre></div>
+</div>
+</div></blockquote>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.arduino.cc/reference/en/language/functions/external-interrupts/detachinterrupt/">detachInterrupt(pin_no)</a>   It disables the interrupt at that pin.</p></li>
+</ul>
+<ol class="arabic simple" start="8">
+<li><p><strong>Serial Class</strong></p></li>
+</ol>
+<blockquote>
+<div><p>This is a class predefined in the “Arduino.h” library for serial communication. It consists of many functions which are used for manipulating data. This has extreme importance in UART communication.</p>
+<p>Visit: <a class="reference external" href="https://www.arduino.cc/reference/en/language/functions/communication/serial/">https://www.arduino.cc/reference/en/language/functions/communication/serial/</a> to know more about functions available in this class.</p>
+</div></blockquote>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="BME280.html" class="btn btn-neutral float-left" title="BME280" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Sincgrid LLP
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
