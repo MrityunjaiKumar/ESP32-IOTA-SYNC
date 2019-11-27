@@ -13,7 +13,8 @@ IOT-A-SYNC board is developed around ESP32 SOC by Espressif Systems.
 ESP32 is a series of low-cost, low-power system on a chip microcontrollers with integrated Wi-Fi and dual-mode Bluetooth. :raw-html:`<br />`
 
 
-URL for ESP32-IOTA-SYNC repository:  `ESP32-IOTA-SYNC <https://github.com/MrityunjaiKumar/ESP32-IOTA-SYNC.git>` 
+URL for ESP32-IOTA-SYNC repository:  `ESP32-IOTA-SYNC <https://github.com/MrityunjaiKumar/ESP32-IOTA-SYNC.git>`_
+
 URL for Design and Practicum Workshop: `DPW <https://github.com/MrityunjaiKumar/Design_and_Practicum_workshop-DPW100->`_ 
 .. toctree::
    :maxdepth: 1
