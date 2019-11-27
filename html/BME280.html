@@ -36,9 +36,7 @@
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Basic Functions that can be used with ESP32" href="Basic Functions.html" />
-    <link rel="prev" title="CH340 Driver for Windows" href="CH340 Driver for Windows.html" /> 
+    <link rel="search" title="Search" href="search.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -82,20 +80,14 @@
               
             
             
-              <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="Documentation.html">Documentation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="SettingPlatformIO.html">Setting up Environment(Platform.IO)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="SettingArduinoIDE.html">Setting up Arduino IDE</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CH340 Driver for Windows.html">CH340 Driver for Windows</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">BME280</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#temperature-humidity-and-pressure-sensor">Temperature, Humidity and Pressure Sensor</a></li>
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">BME280</a><ul>
+<li><a class="reference internal" href="#temperature-humidity-and-pressure-sensor">Temperature, Humidity and Pressure Sensor</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Basic Functions.html">Basic Functions that can be used with ESP32</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Pinout.html"><strong>Pinout</strong></a></li>
 </ul>
-
+</div>
             
           
         </div>
@@ -165,10 +157,13 @@
 <p>BME280 is the next-generation digital temperature, humidity and pressure sensor manufactured by Bosch. It’s a successor to sensors like BMP180, BMP085 or BMP183.</p>
 <a class="reference internal image-reference" href="_images/BME280-Pic.png"><img alt="alternate text" class="align-center" src="_images/BME280-Pic.png" style="width: 600px; height: 250px;" /></a>
 <ol class="arabic">
-<li><p>Operating Voltage = 3.3V to 5V</p></li>
-<li><p>Communication Protocol = I2C(Default Address = 0x76)</p></li>
-<li><p>Library Used = Adafruit BME280</p></li>
-<li><p>Installing Library on PlatformIO:
+<li><p class="first">Operating Voltage = 3.3V to 5V</p>
+</li>
+<li><p class="first">Communication Protocol = I2C(Default Address = 0x76)</p>
+</li>
+<li><p class="first">Library Used = Adafruit BME280</p>
+</li>
+<li><p class="first">Installing Library on PlatformIO:
 Go on PlatformIO home → Click on libraries → Search for Adafruit BME280 → Click on Install to → Change Global Storage to your project directory → Click Install</p>
 <p>The BME280 sensor library uses the Adafruit Sensor support backend. So, search the library manager for Adafruit Unified Sensor, Wire and install them too.</p>
 <p><em>Example Code</em></p>
@@ -234,15 +229,6 @@ Go on PlatformIO home → Click on libraries → Search for Adafruit BME280 → 
            
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="Basic Functions.html" class="btn btn-neutral float-right" title="Basic Functions that can be used with ESP32" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="CH340 Driver for Windows.html" class="btn btn-neutral float-left" title="CH340 Driver for Windows" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-    </div>
   
 
   <hr/>

@@ -36,8 +36,7 @@
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Basic Functions that can be used with ESP32" href="Basic Functions.html" /> 
+    <link rel="search" title="Search" href="search.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -81,17 +80,11 @@
               
             
             
-              <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="Documentation.html">Documentation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="SettingPlatformIO.html">Setting up Environment(Platform.IO)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="SettingArduinoIDE.html">Setting up Arduino IDE</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CH340 Driver for Windows.html">CH340 Driver for Windows</a></li>
-<li class="toctree-l1"><a class="reference internal" href="BME280.html">BME280</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Basic Functions.html">Basic Functions that can be used with ESP32</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#"><strong>Pinout</strong></a></li>
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#"><strong>Pinout</strong></a></li>
 </ul>
-
+</div>
             
           
         </div>
@@ -160,246 +153,246 @@
 <div><p>These are list of pins connected on your IOT-A-SYNC board.</p>
 <p>For ESP-32 datasheet visit : <a class="reference external" href="https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf">https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf</a></p>
 <p>For ESP32-Wroom datasheet visit : <a class="reference external" href="https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf">https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf</a></p>
-<table class="docutils align-default">
+<table border="1" class="docutils">
 <colgroup>
-<col style="width: 6%" />
-<col style="width: 11%" />
-<col style="width: 7%" />
-<col style="width: 40%" />
-<col style="width: 16%" />
-<col style="width: 21%" />
+<col width="6%" />
+<col width="11%" />
+<col width="7%" />
+<col width="40%" />
+<col width="16%" />
+<col width="21%" />
 </colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>GPIO</p></th>
-<th class="head"><p>INPUT</p></th>
-<th class="head"><p>OUTPUT</p></th>
-<th class="head"><p>NOTES</p></th>
-<th class="head"><p>Peripheral pins</p></th>
-<th class="head"><p>Available on header</p></th>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">GPIO</th>
+<th class="head">INPUT</th>
+<th class="head">OUTPUT</th>
+<th class="head">NOTES</th>
+<th class="head">Peripheral pins</th>
+<th class="head">Available on header</th>
 </tr>
 </thead>
-<tbody>
-<tr class="row-even"><td><p>0</p></td>
-<td><p>pulled up</p></td>
-<td><p>OK</p></td>
-<td><p>outputs PWM signal at boot</p></td>
-<td></td>
-<td><p>YES</p></td>
+<tbody valign="top">
+<tr class="row-even"><td>0</td>
+<td>pulled up</td>
+<td>OK</td>
+<td>outputs PWM signal at boot</td>
+<td>&#160;</td>
+<td>YES</td>
 </tr>
-<tr class="row-odd"><td><p>1</p></td>
-<td><p>TX pin</p></td>
-<td><p>OK</p></td>
-<td><p>debut output at boot</p></td>
-<td></td>
-<td><p>YES</p></td>
+<tr class="row-odd"><td>1</td>
+<td>TX pin</td>
+<td>OK</td>
+<td>debut output at boot</td>
+<td>&#160;</td>
+<td>YES</td>
 </tr>
-<tr class="row-even"><td><p>/</p></td>
-<td><p>OK</p></td>
-<td><p>RX pin</p></td>
-<td><p>connected to on-board LED (in some wroom)</p></td>
-<td><p>LED/EC_17</p></td>
-<td><p>YES</p></td>
+<tr class="row-even"><td>/</td>
+<td>OK</td>
+<td>RX pin</td>
+<td>connected to on-board LED (in some wroom)</td>
+<td>LED/EC_17</td>
+<td>YES</td>
 </tr>
-<tr class="row-odd"><td><p>3</p></td>
-<td><p>OK</p></td>
-<td><p>OK</p></td>
-<td><p>HIGH at boot</p></td>
-<td></td>
-<td><p>YES</p></td>
+<tr class="row-odd"><td>3</td>
+<td>OK</td>
+<td>OK</td>
+<td>HIGH at boot</td>
+<td>&#160;</td>
+<td>YES</td>
 </tr>
-<tr class="row-even"><td><p>4</p></td>
-<td><p>OK</p></td>
-<td><p>OK</p></td>
-<td></td>
-<td><p>SWITCH/EC_18</p></td>
-<td><p>YES</p></td>
+<tr class="row-even"><td>4</td>
+<td>OK</td>
+<td>OK</td>
+<td>&#160;</td>
+<td>SWITCH/EC_18</td>
+<td>YES</td>
 </tr>
-<tr class="row-odd"><td><p>5</p></td>
-<td><p>X</p></td>
-<td><p>X</p></td>
-<td><p>outputs PWM signal at boot</p></td>
-<td><p>LoRa_NSS(SS/CS)</p></td>
-<td><p>YES</p></td>
+<tr class="row-odd"><td>5</td>
+<td>X</td>
+<td>X</td>
+<td>outputs PWM signal at boot</td>
+<td>LoRa_NSS(SS/CS)</td>
+<td>YES</td>
 </tr>
-<tr class="row-even"><td><p>6</p></td>
-<td><p>X</p></td>
-<td><p>X</p></td>
-<td><p>connected to the integrated SPI flash</p></td>
-<td></td>
-<td><p>NOT REQUIRED</p></td>
+<tr class="row-even"><td>6</td>
+<td>X</td>
+<td>X</td>
+<td>connected to the integrated SPI flash</td>
+<td>&#160;</td>
+<td>NOT REQUIRED</td>
 </tr>
-<tr class="row-odd"><td><p>7</p></td>
-<td><p>X</p></td>
-<td><p>X</p></td>
-<td><p>connected to the integrated SPI flash</p></td>
-<td></td>
-<td><p>NOT REQUIRED</p></td>
+<tr class="row-odd"><td>7</td>
+<td>X</td>
+<td>X</td>
+<td>connected to the integrated SPI flash</td>
+<td>&#160;</td>
+<td>NOT REQUIRED</td>
 </tr>
-<tr class="row-even"><td><p>8</p></td>
-<td><p>X</p></td>
-<td><p>X</p></td>
-<td><p>connected to the integrated SPI flash</p></td>
-<td></td>
-<td><p>NOT REQUIRED</p></td>
+<tr class="row-even"><td>8</td>
+<td>X</td>
+<td>X</td>
+<td>connected to the integrated SPI flash</td>
+<td>&#160;</td>
+<td>NOT REQUIRED</td>
 </tr>
-<tr class="row-odd"><td><p>9</p></td>
-<td><p>X</p></td>
-<td><p>X</p></td>
-<td><p>connected to the integrated SPI flash</p></td>
-<td></td>
-<td><p>NOT REQUIRED</p></td>
+<tr class="row-odd"><td>9</td>
+<td>X</td>
+<td>X</td>
+<td>connected to the integrated SPI flash</td>
+<td>&#160;</td>
+<td>NOT REQUIRED</td>
 </tr>
-<tr class="row-even"><td><p>10</p></td>
-<td><p>X</p></td>
-<td><p>X</p></td>
-<td><p>connected to the integrated SPI flash</p></td>
-<td></td>
-<td><p>NOT REQUIRED</p></td>
+<tr class="row-even"><td>10</td>
+<td>X</td>
+<td>X</td>
+<td>connected to the integrated SPI flash</td>
+<td>&#160;</td>
+<td>NOT REQUIRED</td>
 </tr>
-<tr class="row-odd"><td><p>11</p></td>
-<td><p>OK</p></td>
-<td><p>OK</p></td>
-<td><p>connected to the integrated SPI flash</p></td>
-<td></td>
-<td><p>NOT REQUIRED</p></td>
+<tr class="row-odd"><td>11</td>
+<td>OK</td>
+<td>OK</td>
+<td>connected to the integrated SPI flash</td>
+<td>&#160;</td>
+<td>NOT REQUIRED</td>
 </tr>
-<tr class="row-even"><td><p>12</p></td>
-<td><p>OK</p></td>
-<td><p>OK</p></td>
-<td><p>Boot fail if pulled HIGH</p></td>
-<td></td>
-<td><p>YES</p></td>
+<tr class="row-even"><td>12</td>
+<td>OK</td>
+<td>OK</td>
+<td>Boot fail if pulled HIGH</td>
+<td>&#160;</td>
+<td>YES</td>
 </tr>
-<tr class="row-odd"><td><p>13</p></td>
-<td><p>OK</p></td>
-<td><p>OK</p></td>
-<td></td>
-<td></td>
-<td><p>YES</p></td>
+<tr class="row-odd"><td>13</td>
+<td>OK</td>
+<td>OK</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>YES</td>
 </tr>
-<tr class="row-even"><td><p>14</p></td>
-<td><p>OK</p></td>
-<td><p>OK</p></td>
-<td><p>outputs PWM signal at boot</p></td>
-<td></td>
-<td><p>YES</p></td>
+<tr class="row-even"><td>14</td>
+<td>OK</td>
+<td>OK</td>
+<td>outputs PWM signal at boot</td>
+<td>&#160;</td>
+<td>YES</td>
 </tr>
-<tr class="row-odd"><td><p>15</p></td>
-<td><p>OK</p></td>
-<td><p>OK</p></td>
-<td><p>outputs PWM signal at boot</p></td>
-<td><p>IR_RX</p></td>
-<td><p>YES</p></td>
+<tr class="row-odd"><td>15</td>
+<td>OK</td>
+<td>OK</td>
+<td>outputs PWM signal at boot</td>
+<td>IR_RX</td>
+<td>YES</td>
 </tr>
-<tr class="row-even"><td><p>16</p></td>
-<td><p>OK</p></td>
-<td><p>OK</p></td>
-<td></td>
-<td><p>LoRa_DIO0</p></td>
-<td><p>YES</p></td>
+<tr class="row-even"><td>16</td>
+<td>OK</td>
+<td>OK</td>
+<td>&#160;</td>
+<td>LoRa_DIO0</td>
+<td>YES</td>
 </tr>
-<tr class="row-odd"><td><p>17</p></td>
-<td><p>OK</p></td>
-<td><p>OK</p></td>
-<td></td>
-<td><p>IR_TX</p></td>
-<td><p>YES</p></td>
+<tr class="row-odd"><td>17</td>
+<td>OK</td>
+<td>OK</td>
+<td>&#160;</td>
+<td>IR_TX</td>
+<td>YES</td>
 </tr>
-<tr class="row-even"><td><p>18</p></td>
-<td><p>OK</p></td>
-<td><p>OK</p></td>
-<td></td>
-<td><p>LoRa_SCK</p></td>
-<td><p>YES</p></td>
+<tr class="row-even"><td>18</td>
+<td>OK</td>
+<td>OK</td>
+<td>&#160;</td>
+<td>LoRa_SCK</td>
+<td>YES</td>
 </tr>
-<tr class="row-odd"><td><p>19</p></td>
-<td><p>OK</p></td>
-<td><p>OK</p></td>
-<td></td>
-<td><p>LoRa_MISO</p></td>
-<td><p>YES</p></td>
+<tr class="row-odd"><td>19</td>
+<td>OK</td>
+<td>OK</td>
+<td>&#160;</td>
+<td>LoRa_MISO</td>
+<td>YES</td>
 </tr>
-<tr class="row-even"><td><p>21</p></td>
-<td><p>OK</p></td>
-<td><p>OK</p></td>
-<td></td>
-<td><p>SDA</p></td>
-<td><p>YES</p></td>
+<tr class="row-even"><td>21</td>
+<td>OK</td>
+<td>OK</td>
+<td>&#160;</td>
+<td>SDA</td>
+<td>YES</td>
 </tr>
-<tr class="row-odd"><td><p>22</p></td>
-<td><p>OK</p></td>
-<td><p>OK</p></td>
-<td></td>
-<td><p>SCL</p></td>
-<td><p>YES</p></td>
+<tr class="row-odd"><td>22</td>
+<td>OK</td>
+<td>OK</td>
+<td>&#160;</td>
+<td>SCL</td>
+<td>YES</td>
 </tr>
-<tr class="row-even"><td><p>23</p></td>
-<td><p>OK</p></td>
-<td><p>OK</p></td>
-<td></td>
-<td><p>LoRa_MOSI</p></td>
-<td><p>YES</p></td>
+<tr class="row-even"><td>23</td>
+<td>OK</td>
+<td>OK</td>
+<td>&#160;</td>
+<td>LoRa_MOSI</td>
+<td>YES</td>
 </tr>
-<tr class="row-odd"><td><p>25</p></td>
-<td><p>OK</p></td>
-<td><p>OK</p></td>
-<td></td>
-<td><p>EC_1</p></td>
-<td><p>YES</p></td>
+<tr class="row-odd"><td>25</td>
+<td>OK</td>
+<td>OK</td>
+<td>&#160;</td>
+<td>EC_1</td>
+<td>YES</td>
 </tr>
-<tr class="row-even"><td><p>26</p></td>
-<td><p>OK</p></td>
-<td><p>OK</p></td>
-<td></td>
-<td><p>EC_2</p></td>
-<td><p>YES</p></td>
+<tr class="row-even"><td>26</td>
+<td>OK</td>
+<td>OK</td>
+<td>&#160;</td>
+<td>EC_2</td>
+<td>YES</td>
 </tr>
-<tr class="row-odd"><td><p>27</p></td>
-<td><p>OK</p></td>
-<td><p>OK</p></td>
-<td></td>
-<td><p>LoRa_RESET</p></td>
-<td><p>YES</p></td>
+<tr class="row-odd"><td>27</td>
+<td>OK</td>
+<td>OK</td>
+<td>&#160;</td>
+<td>LoRa_RESET</td>
+<td>YES</td>
 </tr>
-<tr class="row-even"><td><p>32</p></td>
-<td><p>OK</p></td>
-<td><p>OK</p></td>
-<td></td>
-<td><p>EC_9</p></td>
-<td><p>YES</p></td>
+<tr class="row-even"><td>32</td>
+<td>OK</td>
+<td>OK</td>
+<td>&#160;</td>
+<td>EC_9</td>
+<td>YES</td>
 </tr>
-<tr class="row-odd"><td><p>33</p></td>
-<td><p>OK</p></td>
-<td><p>OK</p></td>
-<td></td>
-<td><p>EC_10</p></td>
-<td><p>YES</p></td>
+<tr class="row-odd"><td>33</td>
+<td>OK</td>
+<td>OK</td>
+<td>&#160;</td>
+<td>EC_10</td>
+<td>YES</td>
 </tr>
-<tr class="row-even"><td><p>34</p></td>
-<td><p>OK</p></td>
-<td></td>
-<td><p>input only</p></td>
-<td colspan="2"><p>EC_4        |         YES</p></td>
+<tr class="row-even"><td>34</td>
+<td>OK</td>
+<td>&#160;</td>
+<td>input only</td>
+<td colspan="2">EC_4        |         YES</td>
 </tr>
-<tr class="row-odd"><td><p>35</p></td>
-<td><p>OK</p></td>
-<td></td>
-<td><p>input only</p></td>
-<td colspan="2"><p>EC_5        |         YES</p></td>
+<tr class="row-odd"><td>35</td>
+<td>OK</td>
+<td>&#160;</td>
+<td>input only</td>
+<td colspan="2">EC_5        |         YES</td>
 </tr>
-<tr class="row-even"><td><p>36</p></td>
-<td><p>OK</p></td>
-<td></td>
-<td><p>input only</p></td>
-<td><p>EC_6</p></td>
-<td><p>YES</p></td>
+<tr class="row-even"><td>36</td>
+<td>OK</td>
+<td>&#160;</td>
+<td>input only</td>
+<td>EC_6</td>
+<td>YES</td>
 </tr>
-<tr class="row-odd"><td><p>39</p></td>
-<td><p>OK</p></td>
-<td></td>
-<td><p>input only</p></td>
-<td><p>EC_3</p></td>
-<td><p>YES</p></td>
+<tr class="row-odd"><td>39</td>
+<td>OK</td>
+<td>&#160;</td>
+<td>input only</td>
+<td>EC_3</td>
+<td>YES</td>
 </tr>
 </tbody>
 </table>
@@ -411,13 +404,6 @@
            
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-      
-        <a href="Basic Functions.html" class="btn btn-neutral float-left" title="Basic Functions that can be used with ESP32" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-    </div>
   
 
   <hr/>

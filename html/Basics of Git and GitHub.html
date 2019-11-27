@@ -36,9 +36,7 @@
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Sphinx" href="Sphinx.html" />
-    <link rel="prev" title="Documentation" href="Documentation.html" /> 
+    <link rel="search" title="Search" href="search.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -82,37 +80,27 @@
               
             
             
-              <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="Documentation.html">Documentation</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Basics Of Git and GitHub</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#git-installation">Git Installation</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#for-windows">For Windows</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#for-linux">For Linux</a></li>
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Basics Of Git and GitHub</a><ul>
+<li><a class="reference internal" href="#git-installation">Git Installation</a><ul>
+<li><a class="reference internal" href="#for-windows">For Windows</a></li>
+<li><a class="reference internal" href="#for-linux">For Linux</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#configuration">Configuration</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#basic-git-commands">Basic Git Commands</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#git-and-github">Git and GitHub</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#basic-commands">Basic Commands</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#branching-of-github-repositories">Branching of GitHub Repositories</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#cloning-a-github-repository">Cloning a GitHub Repository</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#forks-and-pull-requests">Forks and Pull Requests</a></li>
+<li><a class="reference internal" href="#configuration">Configuration</a></li>
+<li><a class="reference internal" href="#basic-git-commands">Basic Git Commands</a></li>
+<li><a class="reference internal" href="#git-and-github">Git and GitHub</a><ul>
+<li><a class="reference internal" href="#basic-commands">Basic Commands</a></li>
+<li><a class="reference internal" href="#branching-of-github-repositories">Branching of GitHub Repositories</a></li>
+<li><a class="reference internal" href="#cloning-a-github-repository">Cloning a GitHub Repository</a></li>
+<li><a class="reference internal" href="#forks-and-pull-requests">Forks and Pull Requests</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="Sphinx.html">Sphinx</a></li>
 </ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="SettingPlatformIO.html">Setting up Environment(Platform.IO)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="SettingArduinoIDE.html">Setting up Arduino IDE</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CH340 Driver for Windows.html">CH340 Driver for Windows</a></li>
-<li class="toctree-l1"><a class="reference internal" href="BME280.html">BME280</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Basic Functions.html">Basic Functions that can be used with ESP32</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Pinout.html"><strong>Pinout</strong></a></li>
-</ul>
-
+</div>
             
           
         </div>
@@ -155,8 +143,6 @@
   <ul class="wy-breadcrumbs">
     
       <li><a href="index.html">Docs</a> &raquo;</li>
-        
-          <li><a href="Documentation.html">Documentation</a> &raquo;</li>
         
       <li>Basics Of Git and GitHub</li>
     
@@ -210,9 +196,9 @@ Essentially, when you save the current state of your project in Git, it takes a 
 Git has 3 states your files can reside in:</p>
 <blockquote>
 <div><ul class="simple">
-<li><p><em>Committed</em> means that the data is safely stored in the local database.</p></li>
-<li><p><em>Modified</em> means that the files have been changed but not committed yet.</p></li>
-<li><p><em>Staged</em> means that the files have been marked in their current version, and can be committed. <span class="raw-html"><br /></span></p></li>
+<li><em>Committed</em> means that the data is safely stored in the local database.</li>
+<li><em>Modified</em> means that the files have been changed but not committed yet.</li>
+<li><em>Staged</em> means that the files have been marked in their current version, and can be committed. <span class="raw-html"><br /></span></li>
 </ul>
 </div></blockquote>
 <p>The project resides in our local directory or repository. When we make changes to files in such a directory, the files are said to have been ‘modified’. When we stage a file, we add a snapshot of it to the staging area. Once we commit such a file, it’s snapshot from the staging area is saved permanently in the Git directory.</p>
@@ -301,9 +287,10 @@ However, there is a mechanism in place, which allows you to request the original
 <div class="figure align-center">
 <a class="reference internal image-reference" href="_images/GithubPullMerge.jpg"><img alt="_images/GithubPullMerge.jpg" src="_images/GithubPullMerge.jpg" style="width: 500px; height: 300px;" /></a>
 </div>
-<dl>
-<dt>For further reference, visit:</dt><dd><p><a class="reference external" href="https://git-scm.com/book/en/v1/Getting-Started-Git-Basics">https://git-scm.com/book/en/v1/Getting-Started-Git-Basics</a></p>
-<p><a class="reference external" href="https://codeburst.io/git-and-github-in-a-nutshell-b0a3cc06458f">https://codeburst.io/git-and-github-in-a-nutshell-b0a3cc06458f</a></p>
+<dl class="docutils">
+<dt>For further reference, visit:</dt>
+<dd><p class="first"><a class="reference external" href="https://git-scm.com/book/en/v1/Getting-Started-Git-Basics">https://git-scm.com/book/en/v1/Getting-Started-Git-Basics</a></p>
+<p class="last"><a class="reference external" href="https://codeburst.io/git-and-github-in-a-nutshell-b0a3cc06458f">https://codeburst.io/git-and-github-in-a-nutshell-b0a3cc06458f</a></p>
 </dd>
 </dl>
 <div class="toctree-wrapper compound">
@@ -317,15 +304,6 @@ However, there is a mechanism in place, which allows you to request the original
            
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="Sphinx.html" class="btn btn-neutral float-right" title="Sphinx" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="Documentation.html" class="btn btn-neutral float-left" title="Documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-    </div>
   
 
   <hr/>
