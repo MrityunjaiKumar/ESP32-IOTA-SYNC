@@ -16,6 +16,7 @@ ESP32 is a series of low-cost, low-power system on a chip microcontrollers with 
 URL for ESP32-IOTA-SYNC repository:  `ESP32-IOTA-SYNC <https://github.com/MrityunjaiKumar/ESP32-IOTA-SYNC.git>`_
 
 URL for Design and Practicum Workshop: `DPW <https://github.com/MrityunjaiKumar/Design_and_Practicum_workshop-DPW100->`_ 
+
 .. toctree::
    :maxdepth: 1
    :caption: Contents:
