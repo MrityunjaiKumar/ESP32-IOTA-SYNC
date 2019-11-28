@@ -1,15 +1,16 @@
 #include <Arduino.h>
 #include "Modules/modules.h"
 
-
-void setup() {
+void setup()
+{
   // put your setup code here, to run once:
   Serial.begin(115200);
   wifi_ota_setup();
 }
 
-void loop() {
+void loop()
+{
   // put your main code here, to run repeatedly:
 
-wifi_ota_loop();
+  wifi_ota_loop();
 }
