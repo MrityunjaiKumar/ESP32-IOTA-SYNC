@@ -18,7 +18,7 @@ URL for ESP32-IOTA-SYNC repository:  `ESP32-IOTA-SYNC <https://github.com/Mrityu
 URL for Design and Practicum Workshop: `DPW <https://github.com/MrityunjaiKumar/Design_and_Practicum_workshop-DPW100->`_ 
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Contents:
    
    Documentation
