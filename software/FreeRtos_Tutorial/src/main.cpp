@@ -1,18 +1,18 @@
 #include <Arduino.h>
-#include "Modules/modules.h"
-
+#include "Common.h"
 void setup()
 {
   // put your setup code here, to run once:
+
   Serial.begin(115200);
-  wifi_ota_setup();
-  lwic_setup();
+  delay(1000);
+  // setup_executionCore();
+  setup_QueuesBetweenTask();
 }
 
 void loop()
 {
   // put your main code here, to run repeatedly:
-
-  wifi_ota_loop();
-  lwic_loop();
+  // loop_getExecutionCore();
+  void loop_QueuesBetweenTask();
 }
